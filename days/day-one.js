@@ -33,10 +33,10 @@ export const part2 = async (filename) => {
 }
 
 const dayOne = {
-	execute: async (filename) => {
-		console.log(await part1('data/1/' + filename))
-		console.log(await part2('data/1/' + filename))
-	}
+  execute: async (filename) => {
+    console.log(await part1('data/1/' + filename))
+    console.log(await part2('data/1/' + filename))
+  }
 }
 
 export default dayOne
