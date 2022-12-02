@@ -32,12 +32,11 @@ export const part2 = async (filename) => {
     .reduce((sum, current) => sum + current, 0)
 }
 
-export const executeSample = async () => {
-  console.log(await part1('data/1/sample.txt'))
-  console.log(await part2('data/1/sample.txt'))
+const dayOne = {
+	execute: async (filename) => {
+		console.log(await part1('data/1/' + filename))
+		console.log(await part2('data/1/' + filename))
+	}
 }
 
-export const executeInput = async () => {
-  console.log(await part1('data/1/input.txt'))
-  console.log(await part2('data/1/input.txt'))
-}
+export default dayOne

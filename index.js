@@ -1,9 +1,6 @@
-import {executeInput, executeSample} from './days/day-one.js'
+import dayOne from './days/day-one.js'
 
-const run = async () => {
-  await executeSample()
-  await executeInput()
-}
-
-run()
-  .then(() => console.log('success!'))
+(async () => {
+  await dayOne.execute('sample.txt')
+	await dayOne.execute('input.txt')
+})()
