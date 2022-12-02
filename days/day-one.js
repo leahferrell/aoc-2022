@@ -27,7 +27,7 @@ export const part1 = async (filename) => {
 export const part2 = async (filename) => {
   const elfCounts = await parseInput(filename)
 
-	return elfCounts
+  return elfCounts
     .sort((a, b) => a - b)
     .slice(-3)
     .reduce((sum, current) => sum + current, 0)
