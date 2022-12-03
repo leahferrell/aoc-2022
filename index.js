@@ -1,6 +1,6 @@
-import dayTwo from './days/day-two.js'
+import dayThree from './days/day-three.js'
 
 (async () => {
-  await dayTwo.execute('sample.txt')
-  await dayTwo.execute('input.txt')
+  await dayThree.execute('sample.txt')
+  await dayThree.execute('input.txt')
 })()
