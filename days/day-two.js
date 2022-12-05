@@ -73,11 +73,11 @@ export const part2 = async (filename) => {
     .reduce((accumulator, next) => accumulator + next, 0)
 }
 
-const dayTwo = {
+const day = {
   execute: async (filename) => {
     console.log(await part1('data/2/' + filename))
     console.log(await part2('data/2/' + filename))
   }
 }
 
-export default dayTwo
+export default day

@@ -84,11 +84,11 @@ export const part2 = async (filename) => {
     .reduce((sum, badge) => sum + convertItemToPriority(badge), 0)
 }
 
-const dayThree = {
+const day = {
   execute: async (filename) => {
     console.log(await part1('data/3/' + filename))
     console.log(await part2('data/3/' + filename))
   }
 }
 
-export default dayThree
+export default day

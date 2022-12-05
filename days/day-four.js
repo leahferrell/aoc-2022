@@ -46,11 +46,11 @@ export const part2 = async (filename) => {
   ).length
 }
 
-const dayFour = {
+const day = {
   execute: async (filename) => {
     console.log(await part1('data/4/' + filename))
     console.log(await part2('data/4/' + filename))
   }
 }
 
-export default dayFour
+export default day

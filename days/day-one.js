@@ -33,11 +33,11 @@ export const part2 = async (filename) => {
     .reduce((sum, current) => sum + current, 0)
 }
 
-const dayOne = {
+const day = {
   execute: async (filename) => {
     console.log(await part1('data/1/' + filename))
     console.log(await part2('data/1/' + filename))
   }
 }
 
-export default dayOne
+export default day
